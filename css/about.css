@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 800px;
 }
 .about-text {
     white-space: pre-line;
@@ -13,6 +13,6 @@
     color: var(--base-text);
     transition: 1s;
 }
-.about-text:hover {
+.about :hover {
     color: var(--hover-text);
 }

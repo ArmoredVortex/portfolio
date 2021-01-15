@@ -1,0 +1,26 @@
+figure {
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    margin: 2px;
+}
+section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 200px;
+}
+.contact-image {
+    height: 150px;
+    transition: 1s;
+}
+.contact-image:hover{
+    height: 200px;
+}
+.text {
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    color: var(--base-text);
+}
