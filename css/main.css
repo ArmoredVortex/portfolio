@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.main-text {
+    white-space: pre-line;
+    text-align: center;
+    font:bold;
+    font-family: monospace;
+    font-size: 50px;
+    color: var(--base-text);
+    transition: 1s;
+}
+.main :hover{
+    color: var(--hover-text);
+}

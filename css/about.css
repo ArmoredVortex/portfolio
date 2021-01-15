@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.about-text {
+    white-space: pre-line;
+    text-align: center;
+    font:bold;
+    font-family: monospace;
+    font-size: 50px;
+    color: var(--base-text);
+    transition: 1s;
+}
+.about-text:hover {
+    color: var(--hover-text);
+}

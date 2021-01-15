@@ -1,0 +1,25 @@
+:root{
+    --base-text : purple;
+    --hover-text : #00ce7c;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+body {
+    background-color: #061407;
+    overflow: hidden;
+}
+footer {
+    font-family: 'Roboto Thin';
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    color: white;
+}
