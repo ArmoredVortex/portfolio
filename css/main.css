@@ -16,3 +16,11 @@
 .main :hover{
     color: var(--hover-text);
 }
+.dropdown {
+    color: var(--base-text);
+    transition: 1s;
+    background: transparent;
+    border: 0px;
+    font-size: 20px;
+}
+  
