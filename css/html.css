@@ -1,6 +1,7 @@
 :root{
     --base-text : purple;
     --hover-text : #00ce7c;
+    --bg-color : #061407;
 }
 html {
     overflow: scroll;
@@ -11,7 +12,7 @@ html {
     width: 0px;
 }
 body {
-    background-color: #061407;
+    background-color: var(--bg-color) ;
     overflow: hidden;
 }
 footer {

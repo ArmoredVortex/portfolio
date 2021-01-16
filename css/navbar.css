@@ -19,3 +19,6 @@
     color: var(--hover-text);
     transition: 1s;
 }
+.topnav a.active {
+    color: var(--hover-text);
+}

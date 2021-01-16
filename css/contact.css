@@ -7,9 +7,9 @@ figure {
 section{
     height: 500px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
-    gap: 200px;
+    justify-content: space-evenly;
 }
 .contact-image {
     height: 150px;
