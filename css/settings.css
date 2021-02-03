@@ -1,0 +1,56 @@
+.basic-grid {
+    height: 250px;
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 200px 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+    color: var(--base-text);
+    padding: 20px;
+    font-family: monospace;
+    text-align: center;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+.card-text {
+    height: 50px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 50px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    padding-top: 10px;
+    transition: 1s;
+}
+.monospace {
+    color: #9578D3;
+    /* border-color: #9578D3; */
+
+}
+.monospace:hover {
+    color: #00CE7C ;
+    background-color: #181C18;
+}
+.red-velvet {
+    color: #EC4C56;
+    background-color: #242933;
+}
+.red-velvet:hover{
+    color: #F6F0E9;
+}
+.light {
+    background-color: #c2c5cc;
+    color: #000000;
+}
+.light:hover {
+    color: #2D539E
+}
