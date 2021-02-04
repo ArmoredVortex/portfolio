@@ -13,6 +13,7 @@
     padding: 20px;
     font-family: monospace;
     text-align: center;
+    transition: 1s;
 }
 .card {
     display: flex;
@@ -33,12 +34,10 @@
 }
 .monospace {
     color: #9578D3;
-    /* border-color: #9578D3; */
-
+    background-color: #181C18;
 }
 .monospace:hover {
     color: #00CE7C ;
-    background-color: #181C18;
 }
 .red-velvet {
     color: #EC4C56;
@@ -52,5 +51,20 @@
     color: #000000;
 }
 .light:hover {
-    color: #2D539E
+    color: var(--hover-text)
+}
+.theme-button{
+    background-color: transparent;
+    border: none;
+}
+.theme-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.wasp {
+    background-color:#000000 ;
+    color:#F7F700 ;
+}
+.wasp:hover {
+    color: #F3DD57;
 }

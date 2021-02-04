@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
+    <style>
+        @import url('../css/base.css');
+        @import url('../css/settings.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    </style>
+    <script src="../scripts/index.js"></script>
 </head>
-<style>
-    @import url('../css/base.css');
-    @import url('../css/settings.css');
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-</style>
 <body>
+    <script src="../scripts/themes.js"></script>
     <a href="http://github.com/ArmoredVortex/ArmoredVortex.github.io">
         <img
         style="position: absolute; height: 50px; padding: 20px;" 
@@ -24,10 +26,10 @@
     </div>
     <h1 class="heading">Themes</h1>
     <section class="basic-grid">
-        <div class="card"><p class="card-text monospace">monospace</p></div>
-        <div class="card"><p class="card-text red-velvet">red velvet</p></div>
-        <div class="card"><p class="card-text light">light</p></div>
-        <div class="card"><p class="card-text">NaN</p></div>
+        <div class="card"><button class="theme-button"id="monospace"><p class="card-text monospace">monospace</p></button></div>
+        <div class="card"><button class="theme-button"id="red-velvet"><p class="card-text red-velvet">red velvet</p></button></div>
+        <div class="card"><button class="theme-button" id="light"><p class="card-text light">light</p></button></div>
+        <div class="card"><button class="theme-button" id="wasp"><p class="card-text wasp">wasp</p></button></div>
     </section>
 </body>
 </html>
