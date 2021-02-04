@@ -27,7 +27,7 @@ let r = document.querySelector(':root');
     wasp.addEventListener('click',()=>{
         r.style.setProperty('--base-text', '#F7F700');
         r.style.setProperty('--bg-color', '#000000');
-        r.style.setProperty('--hover-text', '#F3DD57');
+        r.style.setProperty('--hover-text', '#FFFFFF');
         setCookie('theme','wasp',365);
     })
     function setCookie(cname, cvalue, exdays) {

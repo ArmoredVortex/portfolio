@@ -15,7 +15,7 @@ window.onload = () => {
         case 'wasp':
             r.style.setProperty('--base-text', '#F7F700');
             r.style.setProperty('--bg-color', '#000000');
-            r.style.setProperty('--hover-text', '#F3DD57');   
+            r.style.setProperty('--hover-text', '#FFFFFF');   
             break; 
         case 'redVelvet':
             r.style.setProperty('--base-text', '#EC4C56');
