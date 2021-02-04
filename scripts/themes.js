@@ -30,6 +30,20 @@ let r = document.querySelector(':root');
         r.style.setProperty('--hover-text', '#FFFFFF');
         setCookie('theme','wasp',365);
     })
+    let ocean = document.getElementById('ocean')
+    ocean.addEventListener('click',()=>{
+        r.style.setProperty('--base-text', '#4A6FB5');
+        r.style.setProperty('--bg-color', '#191826');
+        r.style.setProperty('--hover-text', '#93939F');
+        setCookie('theme','ocean',365);
+    })
+    let olive = document.getElementById('olive')
+    olive.addEventListener('click',()=>{
+        r.style.setProperty('--base-text', '#92946F');
+        r.style.setProperty('--bg-color', '#E9E5CC');
+        r.style.setProperty('--hover-text', '#373731');
+        setCookie('theme','olive',365)
+    })
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays*24*60*60*1000));

@@ -2,7 +2,7 @@
     height: 250px;
     display: grid;
     column-gap: 100px;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
     padding-left: 200px;
     padding-right: 200px;
     align-items: center;
@@ -67,4 +67,18 @@
 }
 .wasp:hover {
     color: #FFFFFF;
+}
+.ocean {
+    color: #4A6FB5;
+    background-color: #191826;
+}
+.ocean:hover {
+    color: #93939F;
+}
+.olive {
+    color: #92946F;
+    background-color: #E9E5CC;
+}
+.olive:hover {
+    color: #373731;
 }

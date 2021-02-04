@@ -22,6 +22,16 @@ window.onload = () => {
             r.style.setProperty('--bg-color', '#242933');
             r.style.setProperty('--hover-text', '#F6F0E9');  
             break;  
+        case 'ocean':
+          r.style.setProperty('--base-text', '#4A6FB5');
+          r.style.setProperty('--bg-color', '#191826');
+          r.style.setProperty('--hover-text', '#93939F');
+          break
+        case 'olive':
+          r.style.setProperty('--base-text', '#92946F');
+          r.style.setProperty('--bg-color', '#E9E5CC');
+          r.style.setProperty('--hover-text', '#373731');
+          break
     }
 }
 function getCookie(cname) {
