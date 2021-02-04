@@ -1,8 +1,7 @@
-window.onload = () => {
-    let r = document.querySelector(':root');
-    // --base-text :
-    // --hover-text :
-    // --bg-color :
+let r = document.querySelector(':root');
+// --base-text :
+// --hover-text :
+// --bg-color :
     let monospace = document.getElementById('monospace')
     monospace.addEventListener('click',()=>{
         r.style.setProperty('--base-text', '#9578D3');
@@ -37,4 +36,3 @@ window.onload = () => {
         var expires = "expires="+ d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
-}
