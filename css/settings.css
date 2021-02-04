@@ -51,7 +51,7 @@
     color: #000000;
 }
 .light:hover {
-    color: var(--hover-text)
+    color: #2D539E;
 }
 .theme-button{
     background-color: transparent;
