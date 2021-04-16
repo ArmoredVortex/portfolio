@@ -2,12 +2,12 @@ let r = document.querySelector(':root');
 // --base-text :
 // --hover-text :
 // --bg-color :
-    let monospace = document.getElementById('monospace')
+    let monospace = document.getElementById('halospace')
     monospace.addEventListener('click',()=>{
         r.style.setProperty('--base-text', '#9578D3');
         r.style.setProperty('--bg-color', '#181C18');
         r.style.setProperty('--hover-text', '#00CE7C');
-        setCookie('theme','monospace',365);
+        setCookie('theme','halospace',365);
     })
     let redVelvet = document.getElementById('red-velvet')
     redVelvet.addEventListener('click',()=>{

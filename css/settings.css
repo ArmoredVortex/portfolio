@@ -32,11 +32,11 @@
     padding-top: 10px;
     transition: 1s;
 }
-.monospace {
+.halospace {
     color: #9578D3;
     background-color: #181C18;
 }
-.monospace:hover {
+.halospace:hover {
     color: #00CE7C ;
 }
 .red-velvet {
