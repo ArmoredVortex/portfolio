@@ -26,6 +26,7 @@
   }
   
   ul {
+    width: 1400px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
