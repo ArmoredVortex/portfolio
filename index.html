@@ -15,19 +15,17 @@
 </head>
 
 <body>
+    <h1 style="color: white;">Hi There, I'm Rachit</h1>
     <div class="sidebar">
-        <div class="sidebar-top">
-            <i class="logo fab fa-sketch"></i>
-        </div>
         <div class="sidebar-center">
             <ul class="list">
                 <li class="list-item">
-                    <i class="list-item-icon fas fa-home"></i>
+                    <i id="home" class="list-item-icon fas fa-home"></i>
                 </li>
                 <li class="list-item">
                     <i class="list-item-icon fas fa-search"></i>
                 </li>
-                <li class="list-item active">
+                <li class="list-item">
                     <i class="list-item-icon fas fa-stream"></i>
                 </li>
                 <li class="list-item">
@@ -45,13 +43,12 @@
                     <i class="list-item-icon far fa-question-circle"></i>                </li>
             </ul>
         </div>
-        <div class="sidebar-bottom">
-            <div class="color-box dark"></div>
-            <div class="color-box night"></div>
-            <div class="color-box light"></div>
-        </div>
     </div>
-    <script src="app.js"></script>
+    <script>
+        document.getElementById('home').onclick = function() {
+            console.log('Hello');
+        }
+    </script>
 </body>
 
 </html>
