@@ -10,28 +10,54 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
 
+    <!-- Import Source Code Pro light 300 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/github.css">
 </head>
 <body>
-    <section>
-        
-    </section>     
+    <section id="home" class="home">
+        <div></div>
+        <div></div>
+        <div class="home-content">
+            <div></div>
+            <h3 style="font-family: 'Source Code Pro', monospace; align-self: flex-end; color: var(--nord7);">Hi There 👋, I am</h3>
+            <h2 class="name">Rachit Kumar Pandey.</h2>
+            <!-- <h1>I am a 16 year old teen and in love with Computers</h1> -->
+        </div>
+    </section>
+    <section id="github" class="github">
+
+    </section>
     <div class="sidebar">
         <div class="sidebar-center">
             <ul class="list">
-                <li class="list-item">
-                    <i class="list-item-icon fas fa-home"></i>
-                </li>
-                <li class="list-item">
-                    <i class="list-item-icon fab fa-github"></i>
-                </li>
-                <li class="list-item">
-                    <i class="list-item-icon fas fa-users"></i>
-                </li>
-                <li class="list-item">
-                    <i class="list-item-icon fas fa-shopping-basket"></i>
-                </li>
+                <a style="color:inherit;" href="#home">
+                    <li class="list-item">
+                        <i class="list-item-icon fas fa-home"></i>
+                    </li>
+                </a>
+
+                <a style="color:inherit" href="#github">
+                    <li class="list-item">
+                        <i class="list-item-icon fab fa-github"></i>
+                    </li>
+                </a>
+
+                <a style="color:inherit" href="#projects">
+                    <li class="list-item">
+                        <i class="list-item-icon fas fa-project-diagram"></i>
+                    </li>
+                </a>
+
+                <a style="color:inherit" href="#contact">
+                    <li class="list-item">
+                        <i class="list-item-icon fas fa-envelope"></i>
+                    </li>
+                </a>
             </ul>
         </div>
     </div>

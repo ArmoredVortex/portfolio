@@ -1,0 +1,33 @@
+.home {
+    height: 100vh;
+    padding-left: 75px;
+    padding-right: 75px;
+    
+    display: grid; 
+    grid-template-columns: 1.4fr 0.7fr; 
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". ."
+        ". ."
+        ". .";
+}
+
+.home-content {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.4fr 1.2fr 1fr 2fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."
+        "."
+        "."
+        ".";
+}
+
+.name {
+    color: var(--nord6);
+    width: 100% ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px;
+}
