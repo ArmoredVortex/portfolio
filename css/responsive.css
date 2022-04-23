@@ -35,5 +35,12 @@
 
     .stats-image {
         height: 120px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 951px) {
+    .stats-image {
+        height: 165px;
     }
 }
