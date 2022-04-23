@@ -22,13 +22,14 @@
     scroll-behavior: smooth;
 }
 
-html, body {
+html {
     overflow-x: hidden;
 }
 
 body {
     background-color: #242933;
     caret-color: transparent;
+    overflow-x: hidden;
 }
 
 a {
