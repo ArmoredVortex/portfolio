@@ -22,6 +22,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #242933;
     caret-color: transparent;
