@@ -1,4 +1,3 @@
-
 /* hide sidebar when using mobile */
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -30,5 +29,11 @@
 }
 
 @media screen and (max-width: 950px) {
-       
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stats-image {
+        height: 120px;
+    }
 }
