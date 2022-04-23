@@ -1,3 +1,20 @@
 .github {
     height: 100vh;
+    padding-left: 75px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1.2fr 0.3fr 0.3fr 1fr 2.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "."
+        "."
+        "."
+        "."; 
+}
+
+.profile-pic {
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid var(--nord8);
 }

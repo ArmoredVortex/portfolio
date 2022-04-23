@@ -1,7 +1,6 @@
 .home {
     height: 100vh;
     padding-left: 75px;
-    padding-right: 75px;
     
     display: grid; 
     grid-template-columns: 1.4fr 0.7fr; 

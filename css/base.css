@@ -26,3 +26,7 @@ body {
     background-color: #242933;
     caret-color: transparent;
 }
+
+a {
+    text-decoration: none;
+}
