@@ -71,3 +71,13 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 10px;
 }
+
+.goto {
+    font-size: 30px;
+    color: var(--nord7);
+    transition: 0.3s;
+}
+
+.goto:hover {
+    color: var(--nord9);
+}
