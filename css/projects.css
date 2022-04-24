@@ -21,6 +21,7 @@
 .project-heading { 
     grid-area: project-heading;
     text-align: center;
+    align-self: center;
 }
 
 
