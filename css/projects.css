@@ -44,7 +44,7 @@
     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
 }
 
-.card .multi-button button {
+.card .multi-button a {
     display: grid;
     place-items: center;
     position: absolute;
@@ -60,18 +60,18 @@
     box-shadow: 0 0 0rem -0.25rem var(--background);
 }
 
-.card .multi-button button:hover {
+.card .multi-button a:hover {
     background: var(--text);
     color: var(--background);
     box-shadow: 0 0 1rem -0.25rem var(--background);
 }
 
-.card .multi-button button:first-child:nth-last-child(2):nth-child(1), body .card .multi-button button:first-child:nth-last-child(2) ~ *:nth-child(1) {
+.card .multi-button a:first-child:nth-last-child(2):nth-child(1), body .card .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(1) {
     right: 70%;
     top: 5px;
 }
 
-.card .multi-button button:first-child:nth-last-child(2):nth-child(2), body .card .multi-button button:first-child:nth-last-child(2) ~ *:nth-child(2) {
+.card .multi-button a:first-child:nth-last-child(2):nth-child(2), body .card .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(2) {
     right: 30%;
     top: 5px;
 }
