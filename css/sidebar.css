@@ -1,6 +1,6 @@
 .sidebar {
     width: 50px;
-    height: 250px;
+    height: 214px;
     background-color: var(--nord0);
     color: var(--nord4);
     display: flex;
@@ -27,6 +27,7 @@
 }
   
 .list-item {
+    margin: 5px 0px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -35,8 +36,8 @@
     transition: 0.5s;
 }
 .list-item:hover {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 12px;
 }
 
 .list-item-icon {
@@ -46,6 +47,6 @@
   
 .list-item.active,
 .list-item:hover {
-    color: var(--nord6);
+    color: var(--nord0);
     background-color: var(--nord7);
 }
