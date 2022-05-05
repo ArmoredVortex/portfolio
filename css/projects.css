@@ -89,6 +89,10 @@
     height: 10rem;
 }
 
+.card-img {
+  border: 2px solid var(--nord3);
+}
+
 /* CSS */
 .button-3 {
   appearance: none;
