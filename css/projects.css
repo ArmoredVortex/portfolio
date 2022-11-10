@@ -29,8 +29,18 @@
     --text: var(--nord8);
     position: relative;
     height: 12rem;
-    width: 350px;
+    width: 340px;
     box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+    transition: 50ms;
+}
+
+.card:hover {
+    width: 350px;
+    height: 12.5rem;
+}
+
+.card:not(:hover){
+    opacity: 0.5 !important;
 }
 
 .card .multi-button {
@@ -84,6 +94,7 @@
     border-radius: 1rem;
     color: var(--text);
 }
+
 .card:hover .multi-button, .card .multi-button:focus-within {
     width: 10rem;
     height: 10rem;
