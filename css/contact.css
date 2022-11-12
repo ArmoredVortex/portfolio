@@ -1,86 +1,86 @@
 .contact {
-    height: 100vh;
-    padding-left: 75px;
-    padding-top: 30px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-template-areas: 
-        "."
-        "."
-        ".";
+  height: 100vh;
+  padding-left: 75px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    "."
+    "."
+    ".";
 }
 
 .contact-content {
-    padding-left: 32px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.6fr 0.3fr 0.4fr 0.8fr 0.6fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "."
-        "."
-        "."
-        "."
-        ".";
+  padding-left: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 0.3fr 0.4fr 0.8fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    ".";
 }
 
 .contact-icon-container {
-    font-size: 50px;
-    display: flex;
-    align-items: center;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-icon {
-    color: var(--nord7);
-    transition: 0.3s;
-    font-size: 38px;
+  color: var(--nord7);
+  transition: 0.3s;
+  font-size: 38px;
 }
 
 .contact-icon:hover {
-    color: var(--nord9);
-    font-size: 50px;
+  color: var(--nord9);
+  font-size: 50px;
 }
 
 .footer {
-    padding-left: 32px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.9fr 0.1fr 0.1fr; 
-    grid-template-areas: 
-        "."
-        "."
-        ".";
+  padding-left: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 0.1fr 0.1fr;
+  grid-template-areas:
+    "."
+    "."
+    ".";
 }
 
 .credits {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .credits-text {
-    /* source code pro */
-    font-family: 'Source Code Pro', monospace;
-    font-size: 10px;
-    color: var(--nord7);
+  /* source code pro */
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
+  color: var(--nord7);
 }
 
 .issues {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
 }
 
 .goto {
-    font-size: 30px;
-    color: var(--nord7);
-    transition: 0.3s;
+  font-size: 30px;
+  color: var(--nord7);
+  transition: 0.3s;
 }
 
 .goto:hover {
-    color: var(--nord9);
+  color: var(--nord9);
 }

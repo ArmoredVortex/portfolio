@@ -1,121 +1,86 @@
 :root {
-    --background: var(--nord0);
+  --background: var(--nord0);
 }
 
 .projects {
-    height: 100vh;
-    justify-items: center;
-    padding-left: 75px;
-    padding-right: 50px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.8fr 1.1fr 1.1fr; 
-    gap: 20px 20px; 
-    grid-template-areas: 
-        "project-heading project-heading project-heading"
-        ". . ."
-        ". . ."; 
+  height: 100vh;
+  justify-items: center;
+  padding-left: 75px;
+  padding-right: 50px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1.1fr 1.1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "project-heading project-heading project-heading"
+    ". . ."
+    ". . .";
 }
 
-.project-heading { 
-    grid-area: project-heading;
-    text-align: center;
-    align-self: center;
+/* dim cards when not hovered */
+.projects:hover .card {
+  opacity: 0.5;
+  transition: opacity 0.5s;
 }
 
+.project-heading {
+  grid-area: project-heading;
+  text-align: center;
+  align-self: center;
+}
 
 .card {
-    --text: var(--nord8);
-    position: relative;
-    height: 12rem;
-    width: 340px;
-    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
-    transition: 50ms;
+  --text: var(--nord8);
+  position: relative;
+  height: 12rem;
+  width: 340px;
+  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+  transition: 50ms;
 }
 
 .card:hover {
-    width: 350px;
-    height: 12.5rem;
-}
-
-.card:not(:hover){
-    opacity: 0.5 !important;
+  width: 350px;
+  height: 12.5rem;
+  opacity: 1 !important;
 }
 
 .card .multi-button {
-    /* z-index: 0; */
-    position: absolute;
-    top: 1.25rem;
-    right: 50%;
-    border-radius: 100%;
-    width: 0rem;
-    height: 0rem;
-    transform: translate(+50%, -50%);
-    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-}
-
-.card .multi-button a {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border: none;
-    border-radius: 100%;
-    background: var(--background);
-    color: var(--text);
-    transform: translate(+50%, +50%);
-    cursor: pointer;
-    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: 0 0 0rem -0.25rem var(--background);
-}
-
-.card .multi-button a:hover {
-    background: var(--text);
-    color: var(--background);
-    box-shadow: 0 0 1rem -0.25rem var(--background);
-}
-
-.card .multi-button a:first-child:nth-last-child(2):nth-child(1), body .card .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(1) {
-    right: 70%;
-    top: 5px;
-}
-
-.card .multi-button a:first-child:nth-last-child(2):nth-child(2), body .card .multi-button a:first-child:nth-last-child(2) ~ *:nth-child(2) {
-    right: 30%;
-    top: 5px;
+  /* z-index: 0; */
+  position: absolute;
+  top: 1.25rem;
+  right: 50%;
+  border-radius: 100%;
+  width: 0rem;
+  height: 0rem;
+  transform: translate(+50%, -50%);
+  transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
 }
 
 .card .container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    color: var(--text);
-}
-
-.card:hover .multi-button, .card .multi-button:focus-within {
-    width: 10rem;
-    height: 10rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  color: var(--text);
 }
 
 .card-img {
   border: 2px solid var(--nord3);
 }
 
-/* CSS */
 .button-3 {
   appearance: none;
   background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
+  border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -140,18 +105,18 @@
 }
 
 .button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
   outline: none;
 }
 
 .button-3:disabled {
   background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
   cursor: default;
 }
 
 .button-3:active {
   background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
 }

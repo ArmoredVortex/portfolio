@@ -1,46 +1,49 @@
 .home {
-    height: 100vh;
-    padding-left: 75px;
-    
-    display: grid; 
-    grid-template-columns: 1.4fr 0.7fr; 
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    gap: 0px 0px; 
-    grid-template-areas: 
-        ". ."
-        ". ."
-        ". .";
+  height: 100vh;
+  padding-left: 75px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
 }
 
 .home-content {
-    padding-left: 32px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.4fr 1.2fr 1fr 2fr 0.4fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "."
-        "."
-        "."
-        "."
-        ".";
+  padding-left: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.2fr 1fr 2fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    ".";
 }
 
 .name {
-    color: var(--nord6);
-    width: 100% ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px;
+  color: var(--nord6);
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
 }
 
 .home-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: invert(100%) sepia(21%) saturate(4157%) hue-rotate(157deg) brightness(80%) contrast(79%);
-    transition: 0.5s;
-    padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: invert(100%) sepia(21%) saturate(4157%) hue-rotate(157deg)
+    brightness(80%) contrast(79%);
+  transition: 0.5s;
+  padding-right: 32px;
 }
 
 .home-image:hover {
-    filter: invert(73%) sepia(11%) saturate(4484%) hue-rotate(184deg) brightness(72%) contrast(81%);
+  filter: invert(73%) sepia(11%) saturate(4484%) hue-rotate(184deg)
+    brightness(72%) contrast(81%);
 }
