@@ -9,7 +9,7 @@
     "lint": "next lint",
     "deploy": "gh-pages -d out"
   },
-  "homepage": "https://armoredvortex.github.io",
+  "homepage": "https://armoredvortex.is-a.dev",
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
