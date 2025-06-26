@@ -1,12 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(0,0,0,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed top-0 w-full z-40 bg-[rgba(0,0,0,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg"
+    >
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -71,7 +77,7 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
