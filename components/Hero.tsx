@@ -4,6 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Hero = () => {
   return (
@@ -47,13 +48,15 @@ const Hero = () => {
           </div>
 
           {/* Profile Image */}
-          <Image
-            src="/images/profile.jpg"
-            alt="Profile"
-            width={160}
-            height={160}
-            className="rounded-full border-4 border-gray-300 dark:border-gray-600 shadow-md"
-          />
+          <HoverBorderGradient containerClassName="w-[180px] h-[180px] rounded-full flex items-center justify-center">
+            <Image
+              src="/images/profile.jpg"
+              alt="Profile"
+              width={160}
+              height={160}
+              className="rounded-full border-4 border-gray-300 dark:border-gray-600 shadow-md"
+            />
+          </HoverBorderGradient>
         </div>
       </div>
     </div>

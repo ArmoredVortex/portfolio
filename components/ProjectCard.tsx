@@ -1,20 +1,31 @@
+"use client";
+
 import React from "react";
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type ProjectCardProps = {
   projectName: string;
   projectDesc: string;
   imgSrc: string;
+  index?: number; // Optional, if you want staggered animation
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   projectName,
   projectDesc,
   imgSrc,
+  index = 0,
 }) => {
   return (
-    <div className="w-full h-full">
+    <motion.div
+      className="w-full h-full"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ amount: 0.3 }}
+      transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+    >
       <CardContainer className="w-full h-full">
         <CardBody className="bg-gray-50 group/card relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border border-black/[0.1] rounded-xl p-4 flex flex-col justify-between h-full">
           <div>
@@ -45,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </CardItem>
         </CardBody>
       </CardContainer>
-    </div>
+    </motion.div>
   );
 };
 
