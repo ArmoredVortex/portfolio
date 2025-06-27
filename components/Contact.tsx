@@ -8,7 +8,7 @@ import ContactCopy from "./ui/contactCopy";
 const contacts = [
   {
     label: "Email",
-    href: "mailto:armoredvortex@example.com",
+    href: "mailto:rachitpandey@proton.me",
     icon: <SiProtonmail className="w-7 h-7" />,
     type: "link",
   },

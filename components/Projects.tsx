@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { Orbitron } from "next/font/google";
 import ViewMoreCard from "./ViewMoreCard";
 
+import { Orbitron } from "next/font/google";
 const orbitron = Orbitron({
   subsets: ["latin"],
   weight: "700", // Bold
@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div id="projects" className="px-4 py-12 max-w-6xl mx-auto">
       <h2
-        className={`${orbitron.className} text-5xl sm:text-6xl font-extrabold text-left text-blue-500 tracking-tight mb-10`}
+        className={`${orbitron.className} text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-8`}
       >
         Projects
       </h2>

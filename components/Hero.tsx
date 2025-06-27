@@ -31,7 +31,10 @@ const Hero = () => {
           {/* Text Section */}
           <div className="text-left">
             <p className="text-2xl sm:text-4xl font-semibold text-blue-600 dark:text-blue-400">
-              👋 Hi! I’m
+              👋{" "}
+              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-8">
+                Hi! I’m
+              </span>
             </p>
             <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold text-black dark:text-white">
               <Typewriter

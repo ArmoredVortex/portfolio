@@ -25,7 +25,7 @@ const ContactCopy: React.FC<ContactCopyProps> = ({
       onClick={() => onCopy(copyText)}
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       whileHover={{ scale: 1.2, y: -2 }}
       transition={{
         delay: index * 0.1,
