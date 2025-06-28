@@ -1,25 +1,15 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
-import { Orbitron } from "next/font/google";
-
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: "700", // Bold
-});
 
 const About = () => {
   return (
-    <div
+    <section
       id="about"
-      className="relative min-h-[90vh] w-full pt-24 px-6 bg-black text-white flex flex-col justify-center items-start overflow-hidden"
+      className="relative min-h-[90vh] pt-24 px-6 bg-[#2C2C2C] text-[#E4E4E4] flex flex-col justify-center items-start overflow-hidden"
     >
-      {/* Left vertical line */}
-      <div className="absolute left-6 top-24 bottom-24 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 opacity-40 rounded-full" />
-
-      <div className="max-w-6xl">
-        {/* Animated right-side geometric design */}
+      <div className="max-w-6xl mx-auto w-full">
+        {/* Animated geometric design */}
         <motion.svg
           className="absolute right-10 top-1/4 hidden md:block z-0"
           width="300"
@@ -55,24 +45,24 @@ const About = () => {
           />
           <defs>
             <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#3B82F6" />
-              <stop offset="100%" stopColor="#8B5CF6" />
+              <stop offset="0%" stopColor="#A8DADC" />
+              <stop offset="100%" stopColor="#B39CD0" />
             </linearGradient>
             <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#EC4899" />
-              <stop offset="100%" stopColor="#8B5CF6" />
+              <stop offset="0%" stopColor="#FFC1CC" />
+              <stop offset="100%" stopColor="#B39CD0" />
             </linearGradient>
             <linearGradient id="grad3" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#9333EA" />
-              <stop offset="100%" stopColor="#3B82F6" />
+              <stop offset="0%" stopColor="#B39CD0" />
+              <stop offset="100%" stopColor="#A8DADC" />
             </linearGradient>
           </defs>
         </motion.svg>
 
         {/* Main content */}
-        <div className="max-w-3xl ml-12 z-10">
+        <div className="max-w-3xl z-10">
           <motion.h2
-            className={`${orbitron.className} text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-8`}
+            className={`text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#A8DADC] to-[#B39CD0] mb-8`}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -80,34 +70,28 @@ const About = () => {
           >
             About Me
           </motion.h2>
-
           <motion.p
-            className="text-lg text-gray-300 leading-relaxed"
+            className="text-lg text-[#E4E4E4] leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            I&apos;m a passionate developer with a love for building elegant,
-            performant, and user-friendly applications. I enjoy working with
-            modern technologies, designing thoughtful user experiences, and
-            constantly learning and experimenting.
+            Hey there! I&apos;m Rachit — a sophomore studying Computer Science
+            at IIT (ISM) Dhanbad.
           </motion.p>
-
           <motion.p
-            className="mt-6 text-lg text-gray-400 leading-relaxed"
+            className="mt-6 text-lg text-[#C0C0C0] leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Whether it&apos;s frontend interfaces or backend systems, I focus on
-            crafting clean, maintainable code and bringing ideas to life.
-            Let&apos;s build something amazing together.
+            Passionate about Cybersecurity.
           </motion.p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

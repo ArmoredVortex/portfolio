@@ -9,7 +9,7 @@ type ProjectCardProps = {
   projectName: string;
   projectDesc: string;
   imgSrc: string;
-  index?: number; // Optional, if you want staggered animation
+  index?: number;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -27,25 +27,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
     >
       <CardContainer className="w-full h-full">
-        <CardBody className="bg-gray-50 group/card relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border border-black/[0.1] rounded-xl p-4 flex flex-col justify-between h-full">
+        <CardBody className="bg-[#2C2C2C] group/card relative border border-[#B39CD0]/30 rounded-xl p-4 flex flex-col justify-between h-full hover:shadow-lg hover:shadow-[#A8DADC]/20 transition-shadow duration-300">
           <div>
             <CardItem
               translateZ="50"
-              className="text-lg font-semibold text-neutral-800 dark:text-white"
+              className="text-lg font-semibold text-[#E4E4E4]"
             >
               {projectName}
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+              className="text-sm mt-2 text-[#A8DADC]"
             >
               {projectDesc}
             </CardItem>
           </div>
 
           <CardItem translateZ="100" className="w-full mt-4">
-            <div className="relative w-full h-40 rounded-lg overflow-hidden">
+            <div className="relative w-full h-40 rounded-lg overflow-hidden border border-[#FFC1CC]/40">
               <Image
                 src={imgSrc}
                 alt={projectName}

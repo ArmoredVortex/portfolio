@@ -1,21 +1,22 @@
+"use client";
+
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ViewMoreCard from "./ViewMoreCard";
-
-import { Orbitron } from "next/font/google";
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: "700", // Bold
-});
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="px-4 py-12 max-w-6xl mx-auto">
-      <h2
-        className={`${orbitron.className} text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-8`}
+    <section id="projects" className="px-4 py-12 max-w-6xl mx-auto">
+      <motion.h2
+        className={`text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#A8DADC] to-[#B39CD0] mb-8`}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
         Projects
-      </h2>
+      </motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
         <ProjectCard
@@ -50,7 +51,7 @@ const Projects = () => {
         />
         <ViewMoreCard />
       </div>
-    </div>
+    </section>
   );
 };
 
