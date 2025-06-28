@@ -4,11 +4,10 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="home"
       className="relative h-screen w-full bg-[#2c2c2c] overflow-hidden"
     >
@@ -54,7 +53,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Image */}
-          <HoverBorderGradient containerClassName="w-[180px] h-[180px] rounded-full flex items-center justify-center bg-[#2c2c2c]">
+          <div className="p-5 rounded-full bg-[#2c2c2c] shadow-lg translate-y-[-20px] ml-20 hover:shadow-2xl transition-shadow duration-300">
             <Image
               src="/images/profile.jpg"
               alt="Profile"
@@ -62,10 +61,10 @@ const Hero = () => {
               height={200}
               className="rounded-full shadow-md"
             />
-          </HoverBorderGradient>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

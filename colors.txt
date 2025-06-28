@@ -1,0 +1,5 @@
+'primary': '#E4E4E4',
+'background': '#2C2C2C', 
+'cyan': '#A8DADC',
+'pink': '#FFC1CC',
+'lavender': '#B39CD0',
