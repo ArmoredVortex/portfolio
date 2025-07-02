@@ -20,7 +20,7 @@ const contacts = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/rachit-kumar-pandey-599a98319/",
+    href: "https://linkedin.com/in/rachit-kumar-pandey/",
     icon: <SiLinkedin className="w-7 h-7" />,
     type: "link",
   },
